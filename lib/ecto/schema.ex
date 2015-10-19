@@ -528,7 +528,7 @@ defmodule Ecto.Schema do
       authors = Repo.all assoc(post, :comments_authors)
 
   `:through` associations are read-only as they are useful to avoid repetition
-  allowing the developer to easily retrieve data that is often seem together
+  allowing the developer to easily retrieve data that is often seen together,
   but stored across different tables.
 
   `:through` associations can also be preloaded. In such cases, not only
